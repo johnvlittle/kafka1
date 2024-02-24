@@ -1,6 +1,8 @@
 This project is a simple "hello world" spring boot confluent kafka app.
 
-To run it use ./mvnw spring-boot:run
+To run it:
+1) move application.properties.clean to application.properties and edit the values to point to your kafka server.
+2) use ./mvnw spring-boot:run
 
 Source is taken directly from the confluent example and documentation.
 The confluent kafka broker is up and running, and the connection details used in the application.properties file are correct becuse they work 
