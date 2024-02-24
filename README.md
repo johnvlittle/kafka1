@@ -8,7 +8,7 @@ Source is taken directly from the confluent example and documentation.
 The confluent kafka broker is up and running, and the connection details used in the application.properties file are correct becuse they work 
 in the "offset exlorer" app.
 
-However it doesnt work.  There are 3 issues:
+However it doesnt work.  There are 2 issues:
 
 1. intellij cant run the project.  If you hit the run arrow on main, it just gives this error: "java.lang.IllegalStateException: No Docker Compose file found in directory ".  however there is no docker in the project.
 2. The project will run from the command line, but it doesnt work, no message is sent.   It doesnt seem to be reading the application.properties file.  The output is:
@@ -30,4 +30,3 @@ However it doesnt work.  There are 3 issues:
 2024-02-24T21:46:06.247+01:00  WARN 97874 --- [ad | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
 2024-02-24T21:46:06.247+01:00  WARN 97874 --- [ad | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
 ```
-
