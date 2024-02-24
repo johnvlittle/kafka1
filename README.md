@@ -1,7 +1,10 @@
-This project is a simple "hello world" spring boot confluent kafka app 
+This project is a simple "hello world" spring boot confluent kafka app.
+
+To run it use ./mvnw spring-boot:run
+
 Source is taken directly from the confluent example and documentation.
 The confluent kafka broker is up and running, and the connection details used in the application.properties file are correct becuse they work 
-in 
+in the "offset exlorer" app.
 
 However it doesnt work.  There are 3 issues:
 
